@@ -1,0 +1,9 @@
+{
+  "name": "my_learning_records",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:xiongmeiqiang123/learning-records.git",
+  "author": "John <xiongmeiqiang@meituan.com>",
+  "license": "MIT",
+  "private": null
+}
