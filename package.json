@@ -5,5 +5,8 @@
   "repository": "git@github.com:xiongmeiqiang123/learning-records.git",
   "author": "John <xiongmeiqiang@meituan.com>",
   "license": "MIT",
-  "private": null
+  "private": null,
+  "dependencies": {
+    "xmind-viewer": "^1.1.2"
+  }
 }
