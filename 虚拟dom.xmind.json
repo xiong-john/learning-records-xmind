@@ -1,0 +1,1754 @@
+[{
+    "id": "db2a359c30793cb4fa0cdbaab8",
+    "class": "sheet",
+    "title": "画布 1",
+    "rootTopic": {
+        "id": "b9aa22deba98b3b20c7ac8aca2",
+        "class": "topic",
+        "title": "虚拟dom",
+        "structureClass": "org.xmind.ui.map.unbalanced",
+        "children": {
+            "attached": [{
+                "title": "目的",
+                "id": "412537a8-5882-4ad4-85e4-70f58faf4da1",
+                "children": {
+                    "attached": [{
+                        "title": "增加灵活性",
+                        "id": "c9214501-4ae8-4a27-9998-f53aeece485f",
+                        "children": {
+                            "attached": [{
+                                "title": "渲染到不同的平台",
+                                "id": "ba9c96c2-2d63-475b-b29c-bd5817ed8dec"
+                            }]
+                        }
+                    }, {
+                        "title": "渲染效率更高，减少dom的修改花销",
+                        "id": "b4d04533-9e54-4e1e-9da9-54b8bd114561"
+                    }]
+                },
+                "position": {
+                    "x": -2,
+                    "y": -257
+                }
+            }, {
+                "id": "193b56735e689ae86a01d91513",
+                "title": "渲染过程",
+                "children": {
+                    "attached": [{
+                        "title": "首次渲染",
+                        "id": "6eb5bbc2-4e6c-4a0e-90a0-da299523b470",
+                        "children": {
+                            "attached": [{
+                                "title": "多一层，与传统没有明显改进",
+                                "id": "e9f8234c-0d83-45f2-a484-e659614c6cbe"
+                            }]
+                        }
+                    }, {
+                        "title": "后续渲染",
+                        "id": "74713419-fd07-4c67-8a78-e5804ef1faf4",
+                        "children": {
+                            "attached": [{
+                                "title": "可以复用，提升效率",
+                                "id": "122bf544-20b6-4b8d-8469-f2a14d01b32c"
+                            }]
+                        }
+                    }]
+                }
+            }, {
+                "title": "虚拟dom节点",
+                "id": "99415fca-9317-457a-8264-e9c5c6541a8e",
+                "children": {
+                    "attached": [{
+                        "title": "种类（类型）",
+                        "id": "30909dfb-9dcf-4db4-bc68-617b052054fb",
+                        "children": {
+                            "attached": [{
+                                "title": "html/svg 元素",
+                                "id": "1c28363a-1b1c-468d-a7fa-006636e6f30e"
+                            }, {
+                                "id": "5f5433e4-e2c4-4b3e-8349-c70bae813efb",
+                                "title": "组件",
+                                "children": {
+                                    "attached": [{
+                                        "title": "有状态组件",
+                                        "id": "ce63859e-cc77-4810-a484-1bee9c74a932",
+                                        "children": {
+                                            "attached": [{
+                                                "title": "普通组件",
+                                                "id": "83601eb6-feb7-473b-a178-0407042695c8"
+                                            }, {
+                                                "title": "需要keep-alive的组件",
+                                                "id": "c469b94b-3864-4006-b3bb-7d473f8bd794"
+                                            }, {
+                                                "title": "已经keep-alive的组件",
+                                                "id": "f1027c29-47e4-467f-ba06-d3dbc71e8387"
+                                            }]
+                                        }
+                                    }, {
+                                        "title": "函数式组件",
+                                        "id": "a13cff11-6411-4472-b583-caa8ddb6915e"
+                                    }]
+                                }
+                            }, {
+                                "id": "7e7b56b9-fe7a-46e7-a28f-a9fdb121d6ce",
+                                "title": "纯文本"
+                            }, {
+                                "id": "f55f5a7b-db0d-47d5-972a-29091d58c6fc",
+                                "title": "Fragment（Symbol）",
+                                "children": {
+                                    "attached": [{
+                                        "id": "cb496be4-c6a9-417c-acae-da578a3e6d2b",
+                                        "title": "渲染一个片段"
+                                    }, {
+                                        "id": "5a9de162-598f-4f2d-8325-cdf6de792f0a",
+                                        "title": "抽象元素"
+                                    }]
+                                }
+                            }, {
+                                "id": "c3490ee2-b852-42d4-b195-f723e231befc",
+                                "title": "Portal",
+                                "children": {
+                                    "attached": [{
+                                        "id": "26a06bdc-d7d6-439f-9b67-f88ab2029724",
+                                        "title": "Portal",
+                                        "children": {
+                                            "attached": [{
+                                                "id": "37594ebb-d647-4a58-9811-87f322e2ad9f",
+                                                "title": "允许你把内容渲染到任何地方"
+                                            }]
+                                        }
+                                    }]
+                                }
+                            }]
+                        },
+                        "markers": [{
+                            "markerId": "flag-red"
+                        }]
+                    }, {
+                        "title": "结构 NODE",
+                        "id": "ed66c9a0-c8bb-4724-8897-0cb9e4057070",
+                        "children": {
+                            "attached": [{
+                                "id": "ae5f53a8-7a99-487c-be5a-11d429e458f9",
+                                "title": "名字、属性、事件、样式、子节点"
+                            }, {
+                                "title": "data",
+                                "id": "c7fdb5ca-6950-48eb-aa21-307d765f0623",
+                                "children": {
+                                    "attached": [{
+                                        "title": "style",
+                                        "id": "362fc66c-2dce-439d-a456-c6ee1bec32d8"
+                                    }, {
+                                        "id": "4ec0b4c4-9cc8-4b0f-ac27-4eaac077816c",
+                                        "title": "class"
+                                    }, {
+                                        "id": "e99248d1-1a73-4491-8a6a-776ac547e7e9",
+                                        "title": "target: '#app-root' （与Portal相关）"
+                                    }, {
+                                        "title": "其他属性",
+                                        "id": "79329648-430a-49bf-9e29-fd67d5740db2",
+                                        "children": {
+                                            "attached": [{
+                                                "id": "86865dd3-3fc4-46aa-b533-5d599972d614",
+                                                "title": "DOM Prop ",
+                                                "children": {
+                                                    "attached": [{
+                                                        "id": "b55f10e1-c853-4e98-80ef-8593d9c33e42",
+                                                        "title": "domPropsRE = /\\[A-Z]|^(?:value|checked|selected|muted)$/"
+                                                    }]
+                                                }
+                                            }, {
+                                                "id": "6fd9e40f-ac47-4889-92b9-1336669c1920",
+                                                "title": "Attr"
+                                            }]
+                                        }
+                                    }]
+                                }
+                            }, {
+                                "id": "6e8f490e-116a-44ca-8bdc-7af300c821bd",
+                                "title": "_isVNode",
+                                "children": {
+                                    "attached": [{
+                                        "id": "bbccaea3-31dc-488b-b8b1-918e73206eb1",
+                                        "title": "判断一个对象是否是 VNode 对象"
+                                    }]
+                                }
+                            }, {
+                                "id": "26ef571a-d1b7-40d0-996a-fc09826d2f52",
+                                "title": "el",
+                                "notes": {
+                                    "plain": {
+                                        "content": "el 属性的值在 VNode 被渲染为真实 DOM 之前一直都是 null，当 VNode 被渲染为真实 DOM 之后，el 属性的值会引用该真实 DOM。"
+                                    },
+                                    "ops": {
+                                        "ops": [{
+                                            "attributes": {
+                                                "background": "rgba(27, 31, 35, 0.05)",
+                                                "color": "#476582",
+                                                "code": true
+                                            },
+                                            "insert": "el"
+                                        }, {
+                                            "attributes": {
+                                                "color": "#2c3e50"
+                                            },
+                                            "insert": " 属性的值在 "
+                                        }, {
+                                            "attributes": {
+                                                "color": "#476582",
+                                                "background": "rgba(27, 31, 35, 0.05)",
+                                                "code": true
+                                            },
+                                            "insert": "VNode"
+                                        }, {
+                                            "attributes": {
+                                                "color": "#2c3e50"
+                                            },
+                                            "insert": " 被渲染为真实 DOM 之前一直都是 "
+                                        }, {
+                                            "attributes": {
+                                                "color": "#476582",
+                                                "background": "rgba(27, 31, 35, 0.05)",
+                                                "code": true
+                                            },
+                                            "insert": "null"
+                                        }, {
+                                            "attributes": {
+                                                "color": "#2c3e50"
+                                            },
+                                            "insert": "，当 "
+                                        }, {
+                                            "attributes": {
+                                                "color": "#476582",
+                                                "background": "rgba(27, 31, 35, 0.05)",
+                                                "code": true
+                                            },
+                                            "insert": "VNode"
+                                        }, {
+                                            "attributes": {
+                                                "color": "#2c3e50"
+                                            },
+                                            "insert": " 被渲染为真实 DOM 之后，"
+                                        }, {
+                                            "attributes": {
+                                                "color": "#476582",
+                                                "background": "rgba(27, 31, 35, 0.05)",
+                                                "code": true
+                                            },
+                                            "insert": "el"
+                                        }, {
+                                            "attributes": {
+                                                "color": "#2c3e50"
+                                            },
+                                            "insert": " 属性的值会引用该真实 DOM。"
+                                        }, {
+                                            "insert": "\n"
+                                        }]
+                                    },
+                                    "html": {
+                                        "content": {
+                                            "paragraphs": [{
+                                                "spans": [{
+                                                    "text": "el"
+                                                }, {
+                                                    "text": " 属性的值在 "
+                                                }, {
+                                                    "text": "VNode"
+                                                }, {
+                                                    "text": " 被渲染为真实 DOM 之前一直都是 "
+                                                }, {
+                                                    "text": "null"
+                                                }, {
+                                                    "text": "，当 "
+                                                }, {
+                                                    "text": "VNode"
+                                                }, {
+                                                    "text": " 被渲染为真实 DOM 之后，"
+                                                }, {
+                                                    "text": "el"
+                                                }, {
+                                                    "text": " 属性的值会引用该真实 DOM。"
+                                                }]
+                                            }, {
+                                                "spans": [{
+                                                    "text": ""
+                                                }]
+                                            }]
+                                        }
+                                    }
+                                }
+                            }, {
+                                "title": "tag",
+                                "id": "2df51941-98e0-4c1d-b6ab-85be57c0a011"
+                            }, {
+                                "id": "9e464204-e556-4c3e-8666-36fdb2f8d01a",
+                                "title": "flags",
+                                "children": {
+                                    "attached": [{
+                                        "title": "区分节点类型",
+                                        "id": "a41f828c-150a-4ab0-b3bc-0d13b40367ec",
+                                        "notes": {
+                                            "plain": {
+                                                "content": "const VNodeFlags = {\n  // html 标签\n  ELEMENT_HTML: 1,\n  // SVG 标签\n  ELEMENT_SVG: 1 << 1,\n\n  // 普通有状态组件\n  COMPONENT_STATEFUL_NORMAL: 1 << 2,\n  // 需要被keepAlive的有状态组件\n  COMPONENT_STATEFUL_SHOULD_KEEP_ALIVE: 1 << 3,\n  // 已经被keepAlive的有状态组件\n  COMPONENT_STATEFUL_KEPT_ALIVE: 1 << 4,\n  // 函数式组件\n  COMPONENT_FUNCTIONAL: 1 << 5,\n\n  // 纯文本\n  TEXT: 1 << 6,\n  // Fragment\n  FRAGMENT: 1 << 7,\n  // Portal\n  PORTAL: 1 << 8\n}"
+                                            },
+                                            "ops": {
+                                                "ops": [{
+                                                    "insert": "const VNodeFlags = {"
+                                                }, {
+                                                    "attributes": {
+                                                        "code-block": true
+                                                    },
+                                                    "insert": "\n"
+                                                }, {
+                                                    "insert": "  // html 标签"
+                                                }, {
+                                                    "attributes": {
+                                                        "code-block": true
+                                                    },
+                                                    "insert": "\n"
+                                                }, {
+                                                    "insert": "  ELEMENT_HTML: 1,"
+                                                }, {
+                                                    "attributes": {
+                                                        "code-block": true
+                                                    },
+                                                    "insert": "\n"
+                                                }, {
+                                                    "insert": "  // SVG 标签"
+                                                }, {
+                                                    "attributes": {
+                                                        "code-block": true
+                                                    },
+                                                    "insert": "\n"
+                                                }, {
+                                                    "insert": "  ELEMENT_SVG: 1 << 1,"
+                                                }, {
+                                                    "attributes": {
+                                                        "code-block": true
+                                                    },
+                                                    "insert": "\n\n"
+                                                }, {
+                                                    "insert": "  // 普通有状态组件"
+                                                }, {
+                                                    "attributes": {
+                                                        "code-block": true
+                                                    },
+                                                    "insert": "\n"
+                                                }, {
+                                                    "insert": "  COMPONENT_STATEFUL_NORMAL: 1 << 2,"
+                                                }, {
+                                                    "attributes": {
+                                                        "code-block": true
+                                                    },
+                                                    "insert": "\n"
+                                                }, {
+                                                    "insert": "  // 需要被keepAlive的有状态组件"
+                                                }, {
+                                                    "attributes": {
+                                                        "code-block": true
+                                                    },
+                                                    "insert": "\n"
+                                                }, {
+                                                    "insert": "  COMPONENT_STATEFUL_SHOULD_KEEP_ALIVE: 1 << 3,"
+                                                }, {
+                                                    "attributes": {
+                                                        "code-block": true
+                                                    },
+                                                    "insert": "\n"
+                                                }, {
+                                                    "insert": "  // 已经被keepAlive的有状态组件"
+                                                }, {
+                                                    "attributes": {
+                                                        "code-block": true
+                                                    },
+                                                    "insert": "\n"
+                                                }, {
+                                                    "insert": "  COMPONENT_STATEFUL_KEPT_ALIVE: 1 << 4,"
+                                                }, {
+                                                    "attributes": {
+                                                        "code-block": true
+                                                    },
+                                                    "insert": "\n"
+                                                }, {
+                                                    "insert": "  // 函数式组件"
+                                                }, {
+                                                    "attributes": {
+                                                        "code-block": true
+                                                    },
+                                                    "insert": "\n"
+                                                }, {
+                                                    "insert": "  COMPONENT_FUNCTIONAL: 1 << 5,"
+                                                }, {
+                                                    "attributes": {
+                                                        "code-block": true
+                                                    },
+                                                    "insert": "\n\n"
+                                                }, {
+                                                    "insert": "  // 纯文本"
+                                                }, {
+                                                    "attributes": {
+                                                        "code-block": true
+                                                    },
+                                                    "insert": "\n"
+                                                }, {
+                                                    "insert": "  TEXT: 1 << 6,"
+                                                }, {
+                                                    "attributes": {
+                                                        "code-block": true
+                                                    },
+                                                    "insert": "\n"
+                                                }, {
+                                                    "insert": "  // Fragment"
+                                                }, {
+                                                    "attributes": {
+                                                        "code-block": true
+                                                    },
+                                                    "insert": "\n"
+                                                }, {
+                                                    "insert": "  FRAGMENT: 1 << 7,"
+                                                }, {
+                                                    "attributes": {
+                                                        "code-block": true
+                                                    },
+                                                    "insert": "\n"
+                                                }, {
+                                                    "insert": "  // Portal"
+                                                }, {
+                                                    "attributes": {
+                                                        "code-block": true
+                                                    },
+                                                    "insert": "\n"
+                                                }, {
+                                                    "insert": "  PORTAL: 1 << 8"
+                                                }, {
+                                                    "attributes": {
+                                                        "code-block": true
+                                                    },
+                                                    "insert": "\n"
+                                                }, {
+                                                    "insert": "}"
+                                                }, {
+                                                    "attributes": {
+                                                        "code-block": true
+                                                    },
+                                                    "insert": "\n"
+                                                }, {
+                                                    "insert": "\n"
+                                                }]
+                                            },
+                                            "html": {
+                                                "content": {
+                                                    "paragraphs": [{
+                                                        "spans": [{
+                                                            "text": "const VNodeFlags = {"
+                                                        }]
+                                                    }, {
+                                                        "spans": [{
+                                                            "text": "  // html 标签"
+                                                        }]
+                                                    }, {
+                                                        "spans": [{
+                                                            "text": "  ELEMENT_HTML: 1,"
+                                                        }]
+                                                    }, {
+                                                        "spans": [{
+                                                            "text": "  // SVG 标签"
+                                                        }]
+                                                    }, {
+                                                        "spans": [{
+                                                            "text": "  ELEMENT_SVG: 1 << 1,"
+                                                        }]
+                                                    }, {
+                                                        "spans": [{
+                                                            "text": "  // 普通有状态组件"
+                                                        }]
+                                                    }, {
+                                                        "spans": [{
+                                                            "text": "  COMPONENT_STATEFUL_NORMAL: 1 << 2,"
+                                                        }]
+                                                    }, {
+                                                        "spans": [{
+                                                            "text": "  // 需要被keepAlive的有状态组件"
+                                                        }]
+                                                    }, {
+                                                        "spans": [{
+                                                            "text": "  COMPONENT_STATEFUL_SHOULD_KEEP_ALIVE: 1 << 3,"
+                                                        }]
+                                                    }, {
+                                                        "spans": [{
+                                                            "text": "  // 已经被keepAlive的有状态组件"
+                                                        }]
+                                                    }, {
+                                                        "spans": [{
+                                                            "text": "  COMPONENT_STATEFUL_KEPT_ALIVE: 1 << 4,"
+                                                        }]
+                                                    }, {
+                                                        "spans": [{
+                                                            "text": "  // 函数式组件"
+                                                        }]
+                                                    }, {
+                                                        "spans": [{
+                                                            "text": "  COMPONENT_FUNCTIONAL: 1 << 5,"
+                                                        }]
+                                                    }, {
+                                                        "spans": [{
+                                                            "text": "  // 纯文本"
+                                                        }]
+                                                    }, {
+                                                        "spans": [{
+                                                            "text": "  TEXT: 1 << 6,"
+                                                        }]
+                                                    }, {
+                                                        "spans": [{
+                                                            "text": "  // Fragment"
+                                                        }]
+                                                    }, {
+                                                        "spans": [{
+                                                            "text": "  FRAGMENT: 1 << 7,"
+                                                        }]
+                                                    }, {
+                                                        "spans": [{
+                                                            "text": "  // Portal"
+                                                        }]
+                                                    }, {
+                                                        "spans": [{
+                                                            "text": "  PORTAL: 1 << 8"
+                                                        }]
+                                                    }, {
+                                                        "spans": [{
+                                                            "text": "}"
+                                                        }]
+                                                    }, {
+                                                        "spans": [{
+                                                            "text": ""
+                                                        }]
+                                                    }]
+                                                }
+                                            }
+                                        }
+                                    }]
+                                }
+                            }, {
+                                "title": "children",
+                                "id": "9e8ce3f6-46ba-4332-8254-b237d0ddfeb9"
+                            }, {
+                                "id": "6ffa1998-c7cf-4060-9863-4404d404f86c",
+                                "title": "childFlags",
+                                "children": {
+                                    "attached": [{
+                                        "title": "children 类型",
+                                        "id": "b1f8f5b5-b647-4924-a9e2-db5f2efe3846"
+                                    }]
+                                }
+                            }, {
+                                "id": "f6ab2dc8-d58b-4eb3-865f-aa3f5d48811a",
+                                "title": "slots"
+                            }]
+                        }
+                    }, {
+                        "id": "db85a541-4a55-429d-8fb5-a327add36014",
+                        "title": "ChildrenFlags",
+                        "children": {
+                            "attached": [{
+                                "title": "children类型",
+                                "id": "0977bdfe-0bd0-4154-9d25-952608b5684a",
+                                "children": {
+                                    "attached": [{
+                                        "id": "0c167f89-3009-4b79-8170-0d26554e60bb",
+                                        "title": "没有子节点",
+                                        "markers": [{
+                                            "markerId": "tag-red"
+                                        }]
+                                    }, {
+                                        "id": "9ad35d08-f3b3-4a22-920f-bc5049d92e92",
+                                        "title": "只有一个子节点",
+                                        "markers": [{
+                                            "markerId": "tag-orange"
+                                        }]
+                                    }, {
+                                        "id": "dece9867-7b57-4c21-b239-459074a30b06",
+                                        "title": "多个子节点",
+                                        "children": {
+                                            "attached": [{
+                                                "id": "3020a994-9477-4a59-9c12-5cd703dca54e",
+                                                "title": "有 key"
+                                            }, {
+                                                "id": "402fb85f-5e39-49d3-88bb-1849bb442137",
+                                                "title": "无 key"
+                                            }]
+                                        },
+                                        "markers": [{
+                                            "markerId": "tag-dark-blue"
+                                        }]
+                                    }, {
+                                        "id": "40593e6d-1fcd-4e47-873b-fa948367c55a",
+                                        "title": "不知道子节点的情况",
+                                        "markers": [{
+                                            "markerId": "tag-dark-purple"
+                                        }]
+                                    }]
+                                }
+                            }, {
+                                "title": "为了优化",
+                                "id": "70049f46-fe39-4459-9693-f028dd320321"
+                            }]
+                        }
+                    }]
+                },
+                "branch": "folded"
+            }, {
+                "title": "创建虚拟dom",
+                "id": "e943e72b-5420-405a-8c6c-8b4b5538c167",
+                "children": {
+                    "attached": [{
+                        "id": "173d12d5-928d-4604-8ecb-9e0185558d45",
+                        "title": "h 函数",
+                        "children": {
+                            "attached": [{
+                                "id": "48a27b2e-8849-4d1d-b6a2-3b612700fb43",
+                                "title": "在VNode创建时确定其类型、children的类型"
+                            }, {
+                                "title": "api",
+                                "id": "ca1d1eb7-d6aa-4296-bc20-5f5cbc4a07e8",
+                                "children": {
+                                    "attached": [{
+                                        "title": "入参：tag，data，children",
+                                        "id": "e0859e94-8a5a-4397-b311-53dff4ff5bd6"
+                                    }]
+                                }
+                            }, {
+                                "title": "根据tag判断 flags",
+                                "id": "c8fcc6fc-4b89-4937-a640-85bf20a319cf"
+                            }, {
+                                "title": "根据 children，判断 childFlags",
+                                "id": "3495e2b4-3fb1-4f16-956c-29c21d354d6a"
+                            }]
+                        }
+                    }, {
+                        "title": "jsx",
+                        "id": "82d16c1b-3d57-4d37-8184-2e32c5641124"
+                    }]
+                }
+            }, {
+                "id": "67ddbcb1-85c9-4478-a0aa-580e9fdcd971",
+                "title": "分支主题 3",
+                "titleUnedited": true
+            }, {
+                "title": "渲染器 Render",
+                "id": "b5190598-5429-421b-96cf-058cfa550e66",
+                "children": {
+                    "attached": [{
+                        "title": "解释：简单的说就是将 Virtual DOM 渲染成特定平台下真实 DOM 的工具",
+                        "id": "7a27a0e5-378c-4939-b085-6e1305f2c9f0"
+                    }, {
+                        "title": "Render 参数：(vDom, container)",
+                        "id": "30e9ed6b-dc5e-4d87-852d-7a01730343af",
+                        "children": {
+                            "attached": [{
+                                "title": "将要被渲染的 VNode 对象",
+                                "id": "f60c8fb6-8b06-43dc-aec0-96f4c54098a2"
+                            }, {
+                                "id": "97a0dce8-fc73-4f68-af54-01b99acd8cd6",
+                                "title": "来承载内容的容器(container)，通常也叫挂载点"
+                            }]
+                        }
+                    }, {
+                        "title": "过程",
+                        "id": "d18913df-9ab6-415d-9b4c-3d1ac5440573",
+                        "children": {
+                            "attached": [{
+                                "title": "mount 挂载",
+                                "id": "e0eadd1e-594e-4a62-9ddb-6b61921aced4",
+                                "children": {
+                                    "attached": [{
+                                        "title": "解释：如果旧的 VNode 不存在，则直接将新的 VNode 挂载成全新的 DOM，这个过程叫做 mount",
+                                        "id": "f57e739f-23b8-4e0f-b249-890a17fea59e"
+                                    }, {
+                                        "id": "d54d7e78-447b-4fa1-9b50-35b96cdf2589",
+                                        "title": "不同类型的 VNode 需要采用不同的挂载方式",
+                                        "children": {
+                                            "attached": [{
+                                                "id": "a4ad01db-bbc0-4137-84d9-a0f6b667f36f",
+                                                "title": "mountElement",
+                                                "children": {
+                                                    "attached": [{
+                                                        "title": "基本方法",
+                                                        "id": "b190b81d-5433-4614-a36f-820347b38fa7",
+                                                        "children": {
+                                                            "attached": [{
+                                                                "id": "dd835588-2c40-41e7-a7cb-04099b4e10f2",
+                                                                "title": "document.createElement(vnode.tag)\n处理style\\class等属性\ncontainer.appendChild(el)"
+                                                            }]
+                                                        }
+                                                    }, {
+                                                        "title": "处理SVG",
+                                                        "id": "a877ba4b-bbb8-485e-9d8a-e0b5b371402b",
+                                                        "children": {
+                                                            "attached": [{
+                                                                "id": "e0ffb6a1-731a-4922-afed-6316231f4a99",
+                                                                "title": "document.createElementN"
+                                                            }, {
+                                                                "id": "c7931587-58a3-41da-9d09-6ee86d0e2a21",
+                                                                "title": "在 mountElement 函数中一旦 isSVG 为真，那么后续创建的所有子代元素都会被认为是 svg 标签",
+                                                                "children": {
+                                                                    "attached": [{
+                                                                        "id": "fe2e053f-bc28-4021-b8fb-fa2d864d25e1",
+                                                                        "title": " mountElement(vnode, container, isSVG) "
+                                                                    }]
+                                                                }
+                                                            }]
+                                                        }
+                                                    }, {
+                                                        "title": "处理 style/class/Props/Attr/target",
+                                                        "id": "5c672d29-3ad6-452c-bf3f-e5cc237eb123"
+                                                    }, {
+                                                        "title": "事件处理",
+                                                        "id": "bcb6e5b0-6e92-45af-af6d-0e57c87a5372",
+                                                        "children": {
+                                                            "attached": [{
+                                                                "id": "50f02bac-3082-4607-9881-6d9c4ca53645",
+                                                                "title": "设计：使用 v-on 或 @ 符号加上事件名字"
+                                                            }, {
+                                                                "id": "c122ff2e-ac24-424c-a826-b86d82d0a698",
+                                                                "title": "区分 VNodeData 中的某个属性是 DOM 属性还是 DOM 事件",
+                                                                "children": {
+                                                                    "attached": [{
+                                                                        "id": "bfa52149-c815-4a58-bbcf-5fd266c25cfa",
+                                                                        "title": "只需要检测属性名的前两个字符是不是 'on' 即可。"
+                                                                    }]
+                                                                }
+                                                            }, {
+                                                                "id": "8ab06c5a-34dc-4ab6-a85e-f094f35bfee2",
+                                                                "title": " el.addEventListener(key.slice(2), data[key])"
+                                                            }]
+                                                        }
+                                                    }]
+                                                },
+                                                "notes": {
+                                                    "realHTML": {
+                                                        "content": "<pre>const domPropsRE = /\\[A-Z]|^(?:value|checked|selected|muted)$/\nfunction mountElement(vnode, container, isSVG) {\n  // 省略...\n\n  const data = vnode.data\n  if (data) {\n    for (let key in data) {\n      switch (key) {\n        case 'style':\n          for (let k in data.style) {\n            el.style[k] = data.style[k]\n          }\n          break\n        case 'class':\n          el.className = data[key]\n          break\n        default:\n          if (domPropsRE.test(key)) {\n            // 当作 DOM Prop 处理\n            el[key] = data[key]\n          } else {\n            // 当作 Attr 处理\n            el.setAttribute(key, data[key])\n          }\n          break\n      }\n    }\n  }\n\n  // 省略...\n}</pre><div><br></div>"
+                                                    },
+                                                    "plain": {
+                                                        "content": "const domPropsRE = /\\[A-Z]|^(?:value|checked|selected|muted)$/\nfunction mountElement(vnode, container, isSVG) {\n  // 省略...\n\n  const data = vnode.data\n  if (data) {\n    for (let key in data) {\n      switch (key) {\n        case 'style':\n          for (let k in data.style) {\n            el.style[k] = data.style[k]\n          }\n          break\n        case 'class':\n          el.className = data[key]\n          break\n        default:\n          if (domPropsRE.test(key)) {\n            // 当作 DOM Prop 处理\n            el[key] = data[key]\n          } else {\n            // 当作 Attr 处理\n            el.setAttribute(key, data[key])\n          }\n          break\n      }\n    }\n  }\n\n  // 省略...\n}\n\n"
+                                                    }
+                                                }
+                                            }, {
+                                                "id": "5571c434-e603-49b1-a82e-21b658dd4941",
+                                                "title": "mountComponent",
+                                                "children": {
+                                                    "attached": [{
+                                                        "title": "有状态的组件：mountStatefulComponent",
+                                                        "id": "31978cfc-f227-49db-8041-36af75af9aea",
+                                                        "children": {
+                                                            "attached": [{
+                                                                "id": "ba96e689-93d3-41b2-ba65-6b56bd2f7902",
+                                                                "title": "挂载一个有状态组件只需要四步",
+                                                                "children": {
+                                                                    "attached": [{
+                                                                        "id": "dc2e2945-e9ad-4f49-b7e1-440ea4ec10c0",
+                                                                        "title": "创建组件实例 ： new vnode.tag()",
+                                                                        "children": {
+                                                                            "attached": [{
+                                                                                "id": "4a1a0ae2-46a4-4224-8385-4712b1fbe4b4",
+                                                                                "title": "vnode.tag 属性值就是组件类的引用"
+                                                                            }]
+                                                                        },
+                                                                        "markers": [{
+                                                                            "markerId": "priority-1"
+                                                                        }]
+                                                                    }, {
+                                                                        "id": "27a8d873-558d-4031-bd7c-d52d703cdb22",
+                                                                        "title": "渲染VNode：调用 render 方法",
+                                                                        "children": {
+                                                                            "attached": [{
+                                                                                "id": "e42ba143-2c1b-4add-ba02-cbf99753ab6d",
+                                                                                "title": "instance.$vnode = instance.render()"
+                                                                            }]
+                                                                        },
+                                                                        "markers": [{
+                                                                            "markerId": "priority-2"
+                                                                        }]
+                                                                    }, {
+                                                                        "id": "41fffa47-c99a-431b-bc32-539c825c20ca",
+                                                                        "title": "挂载",
+                                                                        "children": {
+                                                                            "attached": [{
+                                                                                "id": "d113a667-55e9-421c-888c-61dfc7c2dd53",
+                                                                                "title": " mount(instance.$vnode, container, isSVG)"
+                                                                            }]
+                                                                        },
+                                                                        "markers": [{
+                                                                            "markerId": "priority-3"
+                                                                        }]
+                                                                    }, {
+                                                                        "id": "5d310402-b749-41da-ad82-ec9f4238adcd",
+                                                                        "title": " el 属性值 和 组件实例的 $el 属性都引用组件的根DOM元素",
+                                                                        "children": {
+                                                                            "attached": [{
+                                                                                "id": "00d50cac-a0da-42c6-af35-b99ccafdbb8f",
+                                                                                "title": "instance.$el = vnode.el = instance.$vnode.el"
+                                                                            }]
+                                                                        },
+                                                                        "markers": [{
+                                                                            "markerId": "priority-4"
+                                                                        }]
+                                                                    }]
+                                                                }
+                                                            }]
+                                                        }
+                                                    }, {
+                                                        "title": "函数式组件：mountFunctionalComponent",
+                                                        "id": "f10bb6bb-ee4b-4e49-b672-600fac3bcf39",
+                                                        "children": {
+                                                            "attached": [{
+                                                                "id": "3ed1ff93-cbf0-49b7-be75-aba993d94b59",
+                                                                "title": "比挂载有状态组件少了一个实例化的过程"
+                                                            }]
+                                                        }
+                                                    }]
+                                                }
+                                            }, {
+                                                "id": "c7008701-0518-4122-8a8a-404a34e139b3",
+                                                "title": "mountText"
+                                            }, {
+                                                "id": "42012122-f7ea-4716-bf7c-a6ff2174efec",
+                                                "title": "mountFragment",
+                                                "notes": {
+                                                    "realHTML": {
+                                                        "content": "<pre>function mountFragment(vnode, container, isSVG) {\n  const { children, childFlags } = vnode\n  switch (childFlags) {\n    case ChildrenFlags.SINGLE_VNODE:\n      mount(children, container, isSVG)\n      // 单个子节点，就指向该节点\n      vnode.el = children.el\n      break\n    case ChildrenFlags.NO_CHILDREN:\n      const placeholder = createTextVNode('')\n      mountText(placeholder, container)\n      // 没有子节点指向占位的空文本节点\n      vnode.el = placeholder.el\n      break\n    default:\n      for (let i = 0; i &lt; children.length; i++) {\n        mount(children[i], container, isSVG)\n      }\n      // 多个子节点，指向第一个子节点\n      vnode.el = children[0].el\n  }\n}</pre>"
+                                                    },
+                                                    "plain": {
+                                                        "content": "function mountFragment(vnode, container, isSVG) {\n  const { children, childFlags } = vnode\n  switch (childFlags) {\n    case ChildrenFlags.SINGLE_VNODE:\n      mount(children, container, isSVG)\n      // 单个子节点，就指向该节点\n      vnode.el = children.el\n      break\n    case ChildrenFlags.NO_CHILDREN:\n      const placeholder = createTextVNode('')\n      mountText(placeholder, container)\n      // 没有子节点指向占位的空文本节点\n      vnode.el = placeholder.el\n      break\n    default:\n      for (let i = 0; i < children.length; i++) {\n        mount(children[i], container, isSVG)\n      }\n      // 多个子节点，指向第一个子节点\n      vnode.el = children[0].el\n  }\n}\n"
+                                                    }
+                                                },
+                                                "children": {
+                                                    "attached": [{
+                                                        "id": "dce2dcab-ef83-47a6-8d00-ea86ed9f5e9c",
+                                                        "title": "只需要挂载 children"
+                                                    }, {
+                                                        "id": "d8189c5b-a373-4add-ac46-308380c00748",
+                                                        "title": "el 属性的引用",
+                                                        "children": {
+                                                            "attached": [{
+                                                                "id": "80098330-0e35-4c3b-b21b-dabeb554a793",
+                                                                "title": "如果只有一个节点，那么 el 属性就指向该节点；"
+                                                            }, {
+                                                                "id": "944fe6c7-ac76-41b9-9e57-c60780b5d678",
+                                                                "title": "如果有多个节点，则 el 属性值是第一个节点的引用；",
+                                                                "style": {
+                                                                    "id": "7f967727-19f6-4b29-a0fd-3978fa2eabf6",
+                                                                    "properties": {
+                                                                        "fo:font-weight": "normal"
+                                                                    }
+                                                                }
+                                                            }, {
+                                                                "id": "9c3feb0b-360f-467e-88fd-0f9202316e99",
+                                                                "title": "如果片段中没有节点，即空片段"
+                                                            }]
+                                                        }
+                                                    }]
+                                                }
+                                            }, {
+                                                "id": "2df744af-d876-4eed-95ea-f8162a8e16ad",
+                                                "title": "mountPortal",
+                                                "children": {
+                                                    "attached": [{
+                                                        "id": "140aa308-0247-4ed1-8782-2ed6c7a898ff",
+                                                        "title": "el 属性",
+                                                        "children": {
+                                                            "attached": [{
+                                                                "id": "a5d8c3d3-3b52-43a3-a306-3f0e2207170a",
+                                                                "title": "el 属性应该指向该占位元素",
+                                                                "children": {
+                                                                    "attached": [{
+                                                                        "title": "空的文本节点",
+                                                                        "id": "dbe876e2-765c-4f75-9be5-b1cdf93b91a3"
+                                                                    }]
+                                                                }
+                                                            }, {
+                                                                "id": "4d33f010-e033-4254-a4e7-20d82b6a6f1d",
+                                                                "title": "虽然 Portal 的内容可以被渲染到任意位置，但它的行为仍然像普通的DOM元素一样，如事件的捕获/冒泡机制仍然按照代码所编写的DOM结构实施。"
+                                                            }]
+                                                        }
+                                                    }]
+                                                },
+                                                "notes": {
+                                                    "realHTML": {
+                                                        "content": "<pre>function mountPortal(vnode, container) {\n  const { tag, children, childFlags } = vnode\n  const target = typeof tag === 'string' ? document.querySelector(tag) : tag\n  if (childFlags &amp; ChildrenFlags.SINGLE_VNODE) {\n    mount(children, target)\n  } else if (childFlags &amp; ChildrenFlags.MULTIPLE_VNODES) {\n    for (let i = 0; i &lt; children.length; i++) {\n      mount(children[i], target)\n    }\n  }\n\n  // 占位的空文本节点\n  const placeholder = createTextVNode('')\n  // 将该节点挂载到 container 中\n  mountText(placeholder, container, null)\n  // el 属性引用该节点\n  vnode.el = placeholder.el\n}</pre><div><br></div>"
+                                                    },
+                                                    "plain": {
+                                                        "content": "function mountPortal(vnode, container) {\n  const { tag, children, childFlags } = vnode\n  const target = typeof tag === 'string' ? document.querySelector(tag) : tag\n  if (childFlags & ChildrenFlags.SINGLE_VNODE) {\n    mount(children, target)\n  } else if (childFlags & ChildrenFlags.MULTIPLE_VNODES) {\n    for (let i = 0; i < children.length; i++) {\n      mount(children[i], target)\n    }\n  }\n\n  // 占位的空文本节点\n  const placeholder = createTextVNode('')\n  // 将该节点挂载到 container 中\n  mountText(placeholder, container, null)\n  // el 属性引用该节点\n  vnode.el = placeholder.el\n}\n\n"
+                                                    }
+                                                }
+                                            }]
+                                        }
+                                    }]
+                                },
+                                "notes": {
+                                    "realHTML": {
+                                        "content": "<pre>function mount(vnode, container, isSVG) {\n  const { flags } = vnode\n  if (flags &amp; VNodeFlags.ELEMENT) {\n    // 挂载普通标签\n    mountElement(vnode, container, isSVG)\n  } else if (flags &amp; VNodeFlags.COMPONENT) {\n    // 挂载组件\n    mountComponent(vnode, container, isSVG)\n  } else if (flags &amp; VNodeFlags.TEXT) {\n    // 挂载纯文本\n    mountText(vnode, container)\n  } else if (flags &amp; VNodeFlags.FRAGMENT) {\n    // 挂载 Fragment\n    mountFragment(vnode, container, isSVG)\n  } else if (flags &amp; VNodeFlags.PORTAL) {\n    // 挂载 Portal\n    mountPortal(vnode, container, isSVG)\n  }\n}</pre><div><br></div>"
+                                    },
+                                    "plain": {
+                                        "content": "function mount(vnode, container, isSVG) {\n  const { flags } = vnode\n  if (flags & VNodeFlags.ELEMENT) {\n    // 挂载普通标签\n    mountElement(vnode, container, isSVG)\n  } else if (flags & VNodeFlags.COMPONENT) {\n    // 挂载组件\n    mountComponent(vnode, container, isSVG)\n  } else if (flags & VNodeFlags.TEXT) {\n    // 挂载纯文本\n    mountText(vnode, container)\n  } else if (flags & VNodeFlags.FRAGMENT) {\n    // 挂载 Fragment\n    mountFragment(vnode, container, isSVG)\n  } else if (flags & VNodeFlags.PORTAL) {\n    // 挂载 Portal\n    mountPortal(vnode, container, isSVG)\n  }\n}\n\n"
+                                    }
+                                }
+                            }, {
+                                "title": "patch",
+                                "id": "d23e8e60-5f34-4c44-b7a8-74f70bcb3269",
+                                "children": {
+                                    "attached": [{
+                                        "title": "解释：如果旧的 VNode 存在，则会使用新的 VNode 与旧的 VNode 进行对比，试图以最小的资源开销完成 DOM 的更新，这个过程就叫 patch，或“打补丁”",
+                                        "id": "25fdacb3-cd9f-42de-bae2-6db8ac33e1c3"
+                                    }, {
+                                        "title": "基本原则",
+                                        "id": "a2294829-c60a-4d49-957e-9eee5409604b",
+                                        "children": {
+                                            "attached": [{
+                                                "id": "ea083f96-584d-4fe9-a597-27e61607c441",
+                                                "title": "如果类型不同，则直接调用 replaceVNode 函数使用新的 VNode 替换旧的 VNode，否则根据不同的类型调用与之相符的比对函数"
+                                            }, {
+                                                "id": "cdd1d76a-1226-4755-9196-c6fcd6933229",
+                                                "title": "我们认为不同的标签渲染的内容不同"
+                                            }, {
+                                                "title": "同层比较",
+                                                "id": "bb701226-ac3c-4c76-9f27-4d2b36cc030a"
+                                            }]
+                                        },
+                                        "markers": [{
+                                            "markerId": "flag-red"
+                                        }]
+                                    }, {
+                                        "title": "换 VNode replaceVNode",
+                                        "id": "da7e5422-656a-4f50-8e34-6cf999a9ac38",
+                                        "notes": {
+                                            "realHTML": {
+                                                "content": "<pre>function replaceVNode(prevVNode, nextVNode, container) {\n  // 将旧的 VNode 所渲染的 DOM 从容器中移除\n  container.removeChild(prevVNode.el)\n  // 再把新的 VNode 挂载到容器中\n  mount(nextVNode, container)\n}</pre><div><br></div>"
+                                            },
+                                            "plain": {
+                                                "content": "function replaceVNode(prevVNode, nextVNode, container) {\n  // 将旧的 VNode 所渲染的 DOM 从容器中移除\n  container.removeChild(prevVNode.el)\n  // 再把新的 VNode 挂载到容器中\n  mount(nextVNode, container)\n}\n\n"
+                                            }
+                                        },
+                                        "children": {
+                                            "attached": [{
+                                                "id": "2819dff3-f0f5-41ea-b287-93a189d97317",
+                                                "title": "Vnode不一样",
+                                                "children": {
+                                                    "attached": [{
+                                                        "id": "fe29bb34-db6f-4bd2-9218-3c1f0f254bdb",
+                                                        "title": "prevFlags !== nextFlags"
+                                                    }]
+                                                }
+                                            }]
+                                        }
+                                    }, {
+                                        "id": "3ed20c9e-3f29-46ba-a45f-56124d8f4e22",
+                                        "title": "更新标签元素 patchElement）",
+                                        "children": {
+                                            "attached": [{
+                                                "title": "如果标签不一致：直接替换",
+                                                "id": "1d1b3234-7745-435d-8c3a-bcd04c548a81",
+                                                "children": {
+                                                    "attached": [{
+                                                        "title": "replaceVNode",
+                                                        "id": "68d995f9-357b-4d02-8af8-25d6a737ec79"
+                                                    }]
+                                                }
+                                            }, {
+                                                "id": "b1933ec3-e033-4e87-a6d3-7d32eb70f5bb",
+                                                "title": "如果标签相同",
+                                                "children": {
+                                                    "attached": [{
+                                                        "id": "ba00b87b-a9db-4342-b198-a8b979533de9",
+                                                        "title": "VNodeData（更新data）",
+                                                        "children": {
+                                                            "attached": [{
+                                                                "id": "19f18168-c208-43be-b86f-d023e818f054",
+                                                                "title": "步骤：将新的 VNodeData 全部应用到元素上，再把那些已经不存在于新的 VNodeData 上的数据从元素上移除",
+                                                                "children": {
+                                                                    "attached": [{
+                                                                        "id": "6846615d-b6ba-4973-b42f-291020e35fb7",
+                                                                        "title": "当新的 VNodeData 存在时，遍历新的 VNodeData",
+                                                                        "markers": [{
+                                                                            "markerId": "priority-1"
+                                                                        }]
+                                                                    }, {
+                                                                        "id": "6e656d3f-ed06-4071-813c-c39d4398df6c",
+                                                                        "title": "根据新 VNodeData 中的 key，分别尝试读取旧值和新值，即 prevValue 和 nextValue",
+                                                                        "markers": [{
+                                                                            "markerId": "priority-2"
+                                                                        }]
+                                                                    }, {
+                                                                        "id": "6a2d0dcc-39cd-4b4a-a341-a87e723a9f2b",
+                                                                        "title": "使用 switch...case 语句匹配不同的数据进行不同的更新操作",
+                                                                        "markers": [{
+                                                                            "markerId": "priority-3"
+                                                                        }]
+                                                                    }]
+                                                                }
+                                                            }, {
+                                                                "id": "98d20656-bebd-4237-a3c0-52947de4672e",
+                                                                "title": "patchData",
+                                                                "children": {
+                                                                    "attached": [{
+                                                                        "title": "抽取：同时兼容 mount 与 patch 的更新需求",
+                                                                        "id": "a382292f-f759-4eca-add5-b8a9878e474a"
+                                                                    }, {
+                                                                        "title": "事件处理",
+                                                                        "id": "c2488548-7360-4001-a00b-3ba0dca5e48b",
+                                                                        "notes": {
+                                                                            "realHTML": {
+                                                                                "content": "<pre>if (key[0] === 'o' &amp;&amp; key[1] === 'n') {\n        // 事件\n        // 移除旧事件\n        if (prevValue) {\n          el.removeEventListener(key.slice(2), prevValue)\n        }\n        // 添加新事件\n        if (nextValue) {\n          el.addEventListener(key.slice(2), nextValue)\n        }\n      } </pre><div><br></div>"
+                                                                            },
+                                                                            "plain": {
+                                                                                "content": "if (key[0] === 'o' && key[1] === 'n') {\n        // 事件\n        // 移除旧事件\n        if (prevValue) {\n          el.removeEventListener(key.slice(2), prevValue)\n        }\n        // 添加新事件\n        if (nextValue) {\n          el.addEventListener(key.slice(2), nextValue)\n        }\n      } \n\n"
+                                                                            }
+                                                                        },
+                                                                        "children": {
+                                                                            "attached": [{
+                                                                                "id": "9d9a6e8f-3af7-441c-be40-b5b6362ea8b5",
+                                                                                "title": "如果旧的事件回调函数存在，我们先将其从 DOM 元素上移除，接着如果新的事件回调函数存在我们再将其添加到 DOM 元素中"
+                                                                            }]
+                                                                        }
+                                                                    }]
+                                                                },
+                                                                "notes": {
+                                                                    "realHTML": {
+                                                                        "content": "<pre>export function patchData(el, key, prevValue, nextValue) {\n  switch (key) {\n    case 'style':\n      for (let k in nextValue) {\n        el.style[k] = nextValue[k]\n      }\n      for (let k in prevValue) {\n        if (!nextValue.hasOwnProperty(k)) {\n          el.style[k] = ''\n        }\n      }\n      break\n    case 'class':\n      el.className = nextValue\n      break\n    default:\n      if (key[0] === 'o' &amp;&amp; key[1] === 'n') {\n        // 事件\n        el.addEventListener(key.slice(2), nextValue)\n      } else if (domPropsRE.test(key)) {\n        // 当作 DOM Prop 处理\n        el[key] = nextValue\n      } else {\n        // 当作 Attr 处理\n        el.setAttribute(key, nextValue)\n      }\n      break\n  }\n}</pre><div><br></div>"
+                                                                    },
+                                                                    "plain": {
+                                                                        "content": "export function patchData(el, key, prevValue, nextValue) {\n  switch (key) {\n    case 'style':\n      for (let k in nextValue) {\n        el.style[k] = nextValue[k]\n      }\n      for (let k in prevValue) {\n        if (!nextValue.hasOwnProperty(k)) {\n          el.style[k] = ''\n        }\n      }\n      break\n    case 'class':\n      el.className = nextValue\n      break\n    default:\n      if (key[0] === 'o' && key[1] === 'n') {\n        // 事件\n        el.addEventListener(key.slice(2), nextValue)\n      } else if (domPropsRE.test(key)) {\n        // 当作 DOM Prop 处理\n        el[key] = nextValue\n      } else {\n        // 当作 Attr 处理\n        el.setAttribute(key, nextValue)\n      }\n      break\n  }\n}\n\n"
+                                                                    }
+                                                                }
+                                                            }]
+                                                        }
+                                                    }, {
+                                                        "id": "f4327a8e-ab00-4c8e-926c-07bbc0925029",
+                                                        "title": "更新子节点（patchChildren）",
+                                                        "children": {
+                                                            "attached": [{
+                                                                "id": "b01e68f3-8b30-4e6a-a885-0da1fa876132",
+                                                                "title": "作用：对新旧 VNode 的子节点进行同层级的比较"
+                                                            }, {
+                                                                "title": "参数：",
+                                                                "id": "d768eb72-8793-4300-aa5c-1e210ba7252d",
+                                                                "children": {
+                                                                    "attached": [{
+                                                                        "title": "前四个参数分别是新旧 VNode 子节点以及子节点的类型，",
+                                                                        "id": "f91bcfd9-971c-4660-a3b6-b6a6fff00a09"
+                                                                    }, {
+                                                                        "id": "35ca2d15-1dff-4c73-9ec7-9feb30408d6c",
+                                                                        "title": "参数 el 是这些子节点的父节点"
+                                                                    }]
+                                                                }
+                                                            }, {
+                                                                "title": "分情况讨论",
+                                                                "id": "3d9844d3-e495-4234-8678-d22a4f069262",
+                                                                "children": {
+                                                                    "attached": [{
+                                                                        "title": "旧children 3种情况 * 新children3种情况",
+                                                                        "id": "944813ca-5f5c-45e0-9d91-5e8b96c24dca",
+                                                                        "children": {
+                                                                            "attached": [{
+                                                                                "title": "旧单",
+                                                                                "id": "ab3d381e-c586-4bc2-83bd-80c4c2d7f0a8",
+                                                                                "children": {
+                                                                                    "attached": [{
+                                                                                        "title": "新单",
+                                                                                        "id": "7390292b-19b1-4003-b057-664ea04a986b",
+                                                                                        "children": {
+                                                                                            "attached": [{
+                                                                                                "title": "两个节点patch",
+                                                                                                "id": "c6490bd6-71ca-41de-bac1-532a96d6d0b4"
+                                                                                            }]
+                                                                                        }
+                                                                                    }, {
+                                                                                        "title": "新null",
+                                                                                        "id": "f57f192d-36c6-4d50-a461-f28a0292b023",
+                                                                                        "children": {
+                                                                                            "attached": [{
+                                                                                                "title": "删除旧",
+                                                                                                "id": "8e845968-2107-48f3-9015-63d47f08d76f"
+                                                                                            }]
+                                                                                        }
+                                                                                    }, {
+                                                                                        "title": "新数组",
+                                                                                        "id": "60ba5e0a-9811-4666-b066-eb80f82ad2c5",
+                                                                                        "children": {
+                                                                                            "attached": [{
+                                                                                                "title": "删除旧，mount新数组",
+                                                                                                "id": "abb2a1af-cf85-4170-9c1d-f8a114487f7d"
+                                                                                            }]
+                                                                                        }
+                                                                                    }]
+                                                                                }
+                                                                            }, {
+                                                                                "title": "旧null",
+                                                                                "id": "3c8c3340-e513-4c9e-9372-a1a350c6f775",
+                                                                                "children": {
+                                                                                    "attached": [{
+                                                                                        "title": "新单",
+                                                                                        "id": "7ac98da0-3576-41d8-a814-e751c497d656",
+                                                                                        "children": {
+                                                                                            "attached": [{
+                                                                                                "title": "mount 单",
+                                                                                                "id": "998cef6d-53b9-48f0-abae-cfff659fa33d"
+                                                                                            }]
+                                                                                        }
+                                                                                    }, {
+                                                                                        "title": "新null",
+                                                                                        "id": "b8a97ed6-77f8-4bcd-a618-db481271c1f0",
+                                                                                        "children": {
+                                                                                            "attached": [{
+                                                                                                "title": "不做",
+                                                                                                "id": "9acf2e85-f2c2-44a2-af91-5cb78bd550cd"
+                                                                                            }]
+                                                                                        }
+                                                                                    }, {
+                                                                                        "title": "新数组",
+                                                                                        "id": "7e103708-134a-4e4c-bf05-75c2268d838f",
+                                                                                        "children": {
+                                                                                            "attached": [{
+                                                                                                "title": "mount 新加多个",
+                                                                                                "id": "c4de47d7-b945-4f1b-a43c-26baf98ac2d9"
+                                                                                            }]
+                                                                                        }
+                                                                                    }]
+                                                                                }
+                                                                            }, {
+                                                                                "title": "旧children 为数组",
+                                                                                "id": "9657772e-a973-4dd8-9935-97795000bfd3",
+                                                                                "children": {
+                                                                                    "attached": [{
+                                                                                        "title": "新单",
+                                                                                        "id": "79fd899f-833b-4d05-ab06-be7095e2d1a7",
+                                                                                        "children": {
+                                                                                            "attached": [{
+                                                                                                "title": "删除数组，moutn单",
+                                                                                                "id": "70d9d806-732d-4264-a2e6-a53c0b9385b5"
+                                                                                            }]
+                                                                                        }
+                                                                                    }, {
+                                                                                        "title": "新null",
+                                                                                        "id": "03655c2b-ebb0-4fd8-a97a-f7ff5dfcc192",
+                                                                                        "children": {
+                                                                                            "attached": [{
+                                                                                                "title": "删除数组",
+                                                                                                "id": "5525564a-7a1a-4830-8155-2e50411da111"
+                                                                                            }]
+                                                                                        }
+                                                                                    }, {
+                                                                                        "title": "新children为数组",
+                                                                                        "id": "35f338d7-d79b-4d61-8fc7-de1390793106",
+                                                                                        "class": "minorTopic",
+                                                                                        "children": {
+                                                                                            "attached": [{
+                                                                                                "title": "DIFF核心，同级比较",
+                                                                                                "id": "71ccb82c-0456-4d37-a81a-61d4966573ee",
+                                                                                                "children": {
+                                                                                                    "attached": [{
+                                                                                                        "id": "bca1e544-5eec-4395-9447-9433ae97d2d1",
+                                                                                                        "title": "只有当新旧子节点都是多个子节点时才有必要进行真正的核心 diff，从而尽可能的复用子节点"
+                                                                                                    }, {
+                                                                                                        "title": "key diff",
+                                                                                                        "id": "f8f24fc2-31e4-4524-8ce4-66804faeaf0a",
+                                                                                                        "children": {
+                                                                                                            "attached": [{
+                                                                                                                "title": "React算法",
+                                                                                                                "id": "4467ed86-bc45-44e0-b787-0c666ea13254",
+                                                                                                                "children": {
+                                                                                                                    "attached": [{
+                                                                                                                        "title": "1. 找到可复用节点",
+                                                                                                                        "id": "724286fb-b1c6-4685-8510-48ca915bc485",
+                                                                                                                        "children": {
+                                                                                                                            "attached": [{
+                                                                                                                                "title": "两层遍历",
+                                                                                                                                "id": "dae9fb44-13a0-452a-9f9c-6d1cd918f4b5"
+                                                                                                                            }]
+                                                                                                                        }
+                                                                                                                    }, {
+                                                                                                                        "title": "移动",
+                                                                                                                        "id": "e65b06d3-2421-4f17-be49-cc11b48bb862",
+                                                                                                                        "children": {
+                                                                                                                            "attached": [{
+                                                                                                                                "title": "判断节点是否需要移动",
+                                                                                                                                "id": "1c55fb9f-bb68-43bd-b52c-e99fba8e94a5",
+                                                                                                                                "children": {
+                                                                                                                                    "attached": [{
+                                                                                                                                        "title": "遍历新数组，找旧数组中的位置",
+                                                                                                                                        "id": "25440250-0909-4658-a581-4d48e5a5f56e"
+                                                                                                                                    }, {
+                                                                                                                                        "id": "e561fd50-b760-4c6f-bae7-2b5011da0893",
+                                                                                                                                        "title": "如果在寻找的过程中遇到的索引值不呈现递增趋势，则说明需要移动操作",
+                                                                                                                                        "children": {
+                                                                                                                                            "attached": [{
+                                                                                                                                                "id": "e225e1dc-80a8-48c7-b580-98e971fb7c10",
+                                                                                                                                                "title": "寻找过程中在旧 children 中所遇到的最大索引值\n（就是 React 所使用的算法）",
+                                                                                                                                                "class": "minorTopic",
+                                                                                                                                                "markers": [{
+                                                                                                                                                    "markerId": "tag-red"
+                                                                                                                                                }]
+                                                                                                                                            }]
+                                                                                                                                        },
+                                                                                                                                        "notes": {
+                                                                                                                                            "realHTML": {
+                                                                                                                                                "content": "<div>if (j &lt; lastIndex) {<br>&nbsp; &nbsp; &nbsp; &nbsp; // 需要移动<br>&nbsp; &nbsp; &nbsp; &nbsp; // refNode 是为了下面调用 insertBefore 函数准备的<br>&nbsp; &nbsp; &nbsp; &nbsp; const refNode = nextChildren[i - 1].el.nextSibling<br>&nbsp; &nbsp; &nbsp; &nbsp; // 调用 insertBefore 函数移动 DOM<br>&nbsp; &nbsp; &nbsp; &nbsp; container.insertBefore(prevVNode.el, refNode)<br>&nbsp; &nbsp; &nbsp;}</div>"
+                                                                                                                                            },
+                                                                                                                                            "plain": {
+                                                                                                                                                "content": "if (j < lastIndex) {\n        // 需要移动\n        // refNode 是为了下面调用 insertBefore 函数准备的\n        const refNode = nextChildren[i - 1].el.nextSibling\n        // 调用 insertBefore 函数移动 DOM\n        container.insertBefore(prevVNode.el, refNode)\n     }\n"
+                                                                                                                                            }
+                                                                                                                                        }
+                                                                                                                                    }]
+                                                                                                                                }
+                                                                                                                            }, {
+                                                                                                                                "title": "找到需要移动的地方",
+                                                                                                                                "id": "2b23946b-2255-4241-9014-bdbc893c6219"
+                                                                                                                            }]
+                                                                                                                        }
+                                                                                                                    }, {
+                                                                                                                        "title": "新增",
+                                                                                                                        "id": "e88c2255-3367-43bf-a91c-c6850aba7f21",
+                                                                                                                        "children": {
+                                                                                                                            "attached": [{
+                                                                                                                                "title": "新节点如果没有在旧数组中找到，则在上一个节点后mount",
+                                                                                                                                "id": "130da671-a8b6-40f9-8032-4b513061896e"
+                                                                                                                            }]
+                                                                                                                        }
+                                                                                                                    }, {
+                                                                                                                        "title": "删除",
+                                                                                                                        "id": "f357886b-c7c5-4f5c-aa3c-8b3f3cbb8891",
+                                                                                                                        "children": {
+                                                                                                                            "attached": [{
+                                                                                                                                "id": "f707f74e-2878-4c95-863a-2c9ef172e8b5",
+                                                                                                                                "title": "再优先遍历一次旧的 children，拿着旧 VNode 去新 children 中寻找相同的节点"
+                                                                                                                            }]
+                                                                                                                        }
+                                                                                                                    }]
+                                                                                                                },
+                                                                                                                "notes": {
+                                                                                                                    "realHTML": {
+                                                                                                                        "content": "<pre>let lastIndex = 0\nfor (let i = 0; i &lt; nextChildren.length; i++) {\n  const nextVNode = nextChildren[i]\n  let j = 0,\n    find = false\n  for (j; j &lt; prevChildren.length; j++) {\n    const prevVNode = prevChildren[j]\n    if (nextVNode.key === prevVNode.key) {\n      find = true\n      patch(prevVNode, nextVNode, container)\n      if (j &lt; lastIndex) {\n        // 需要移动\n        const refNode = nextChildren[i - 1].el.nextSibling\n        container.insertBefore(prevVNode.el, refNode)\n        break\n      } else {\n        // 更新 lastIndex\n        lastIndex = j\n      }\n    }\n  }\n  if (!find) {\n    // 挂载新节点\n    // 找到 refNode\n    const refNode =\n      i - 1 &lt; 0\n        ? prevChildren[0].el\n        : nextChildren[i - 1].el.nextSibling\n    mount(nextVNode, container, false, refNode)\n  }\n}\n<br>// 移除已经不存在的节点\n// 遍历旧的节点\nfor (let i = 0; i &lt; prevChildren.length; i++) {\n  const prevVNode = prevChildren[i]\n  // 拿着旧 VNode 去新 children 中寻找相同的节点\n  const has = nextChildren.find(\n    nextVNode =&gt; nextVNode.key === prevVNode.key\n  )\n  if (!has) {\n    // 如果没有找到相同的节点，则移除\n    container.removeChild(prevVNode.el)\n  }\n}</pre>"
+                                                                                                                    },
+                                                                                                                    "plain": {
+                                                                                                                        "content": "let lastIndex = 0\nfor (let i = 0; i < nextChildren.length; i++) {\n  const nextVNode = nextChildren[i]\n  let j = 0,\n    find = false\n  for (j; j < prevChildren.length; j++) {\n    const prevVNode = prevChildren[j]\n    if (nextVNode.key === prevVNode.key) {\n      find = true\n      patch(prevVNode, nextVNode, container)\n      if (j < lastIndex) {\n        // 需要移动\n        const refNode = nextChildren[i - 1].el.nextSibling\n        container.insertBefore(prevVNode.el, refNode)\n        break\n      } else {\n        // 更新 lastIndex\n        lastIndex = j\n      }\n    }\n  }\n  if (!find) {\n    // 挂载新节点\n    // 找到 refNode\n    const refNode =\n      i - 1 < 0\n        ? prevChildren[0].el\n        : nextChildren[i - 1].el.nextSibling\n    mount(nextVNode, container, false, refNode)\n  }\n}\n\n// 移除已经不存在的节点\n// 遍历旧的节点\nfor (let i = 0; i < prevChildren.length; i++) {\n  const prevVNode = prevChildren[i]\n  // 拿着旧 VNode 去新 children 中寻找相同的节点\n  const has = nextChildren.find(\n    nextVNode => nextVNode.key === prevVNode.key\n  )\n  if (!has) {\n    // 如果没有找到相同的节点，则移除\n    container.removeChild(prevVNode.el)\n  }\n}\n"
+                                                                                                                    }
+                                                                                                                },
+                                                                                                                "image": {
+                                                                                                                    "src": "xap:resources/18ebd320e4a8e720942d9c8cf645795802c64069a4e87c0e89af8fc600770e33.png"
+                                                                                                                },
+                                                                                                                "branch": "folded"
+                                                                                                            }, {
+                                                                                                                "id": "3750b233-9e34-4fe5-8630-ff085b60eede",
+                                                                                                                "title": "双端比较",
+                                                                                                                "children": {
+                                                                                                                    "attached": [{
+                                                                                                                        "id": "01bd3f9e-3385-4693-aff8-477f497207d6",
+                                                                                                                        "title": "React 所采用的 Diff 算法在更新时会多次移动",
+                                                                                                                        "image": {
+                                                                                                                            "src": "xap:resources/0442c575335e602c8c1ae86ddd2d6ce50559c502e1ef5dbe7b9ef2b5ddf31f51.png"
+                                                                                                                        }
+                                                                                                                    }, {
+                                                                                                                        "id": "d91c0b25-2a44-4347-92a2-ded9b59bfcc2",
+                                                                                                                        "title": "新旧 children 的两端开始进行比较（四个索引值）"
+                                                                                                                    }, {
+                                                                                                                        "title": "步骤",
+                                                                                                                        "id": "a7ac74d0-3ade-4b12-832a-f885fc403c54",
+                                                                                                                        "image": {
+                                                                                                                            "src": "xap:resources/5f706e8bac27c3dc7fde5c3918bf5643aa696dbe6438c41e0d0312498f4ef6c7.png"
+                                                                                                                        },
+                                                                                                                        "children": {
+                                                                                                                            "attached": [{
+                                                                                                                                "id": "b166a3d3-be70-4ca0-9b91-03455413cda7",
+                                                                                                                                "title": "第一步：拿旧 children 中的 li-a 和新 children 中的 li-d 进行比对，由于二者 key 值不同，所以不可复用，什么都不做。"
+                                                                                                                            }, {
+                                                                                                                                "id": "d6d0312d-e3d0-4a73-95a6-6de18e7538cf",
+                                                                                                                                "title": "第二步：拿旧 children 中的 li-d 和新 children 中的 li-c 进行比对，同样不可复用，什么都不做。"
+                                                                                                                            }, {
+                                                                                                                                "id": "023cce5d-b948-4f4c-9703-2695294f658a",
+                                                                                                                                "title": "第三步：拿旧 children 中的 li-a 和新 children 中的 li-c 进行比对，什么都不做。"
+                                                                                                                            }, {
+                                                                                                                                "id": "4996bfb7-e0ae-4029-b346-ede2d378dd52",
+                                                                                                                                "title": "第四部：拿旧 children 中的 li-d 和新 children 中的 li-d 进行比对，由于这两个节点拥有相同的 key 值，所以我们在这次比对的过程中找到了可复用的节点。",
+                                                                                                                                "children": {
+                                                                                                                                    "attached": [{
+                                                                                                                                        "id": "e3a3402f-a40e-4051-a92c-999bcaf42d6e",
+                                                                                                                                        "title": "li-d 节点所对应的真实 DOM 原本是最后一个子节点，并且更新之后它应该变成第一个子节点。",
+                                                                                                                                        "children": {
+                                                                                                                                            "attached": [{
+                                                                                                                                                "id": "8cf3c456-b905-4741-a5ad-63dd58ec6bd5",
+                                                                                                                                                "title": " 更新索引，指向下一个位置",
+                                                                                                                                                "image": {
+                                                                                                                                                    "src": "xap:resources/f1fa0dfb26b24ade9a4b9ca996508c9e17dd0e3c00305ad7bec8d1f99df05594.png"
+                                                                                                                                                }
+                                                                                                                                            }]
+                                                                                                                                        }
+                                                                                                                                    }]
+                                                                                                                                }
+                                                                                                                            }, {
+                                                                                                                                "id": "1af635af-63d6-446e-80c6-5bda3a597a95",
+                                                                                                                                "title": "这四步比对中，在任何一步中寻找到了可复用节点，则会停止后续的步骤"
+                                                                                                                            }]
+                                                                                                                        },
+                                                                                                                        "branch": "folded"
+                                                                                                                    }]
+                                                                                                                },
+                                                                                                                "notes": {
+                                                                                                                    "realHTML": {
+                                                                                                                        "content": "<pre>while (oldStartIdx &lt;= oldEndIdx &amp;&amp; newStartIdx &lt;= newEndIdx) {\n  if (oldStartVNode.key === newStartVNode.key) {\n    // 步骤一：oldStartVNode 和 newStartVNode 比对\n  } else if (oldEndVNode.key === newEndVNode.key) {\n    // 步骤二：oldEndVNode 和 newEndVNode 比对\n\n    // 调用 patch 函数更新\n    patch(oldEndVNode, newEndVNode, container)\n    // 更新索引，指向下一个位置\n    oldEndVNode = prevChildren[--oldEndIdx]\n    newEndVNode = newEndVNode[--newEndIdx]\n  } else if (oldStartVNode.key === newEndVNode.key) {\n    // 步骤三：oldStartVNode 和 newEndVNode 比对\n\n    // 调用 patch 函数更新\n    patch(oldStartVNode, newEndVNode, container)\n    // 将 oldStartVNode.el 移动到 oldEndVNode.el 的后面，也就是 oldEndVNode.el.nextSibling 的前面\n    container.insertBefore(\n      oldStartVNode.el,\n      oldEndVNode.el.nextSibling\n    )\n    // 更新索引，指向下一个位置\n    oldStartVNode = prevChildren[++oldStartIdx]\n    newEndVNode = nextChildren[--newEndIdx]\n  } else if (oldEndVNode.key === newStartVNode.key) {\n    // 步骤四：oldEndVNode 和 newStartVNode 比对\n\n    // 先调用 patch 函数完成更新\n    patch(oldEndVNode, newStartVNode, container)\n    // 更新完成后，将容器中最后一个子节点移动到最前面，使其成为第一个子节点\n    container.insertBefore(oldEndVNode.el, oldStartVNode.el)\n    // 更新索引，指向下一个位置\n    oldEndVNode = prevChildren[--oldEndIdx]\n    newStartVNode = nextChildren[++newStartIdx]\n  }\n}</pre><div><br></div>"
+                                                                                                                    },
+                                                                                                                    "plain": {
+                                                                                                                        "content": "while (oldStartIdx <= oldEndIdx && newStartIdx <= newEndIdx) {\n  if (oldStartVNode.key === newStartVNode.key) {\n    // 步骤一：oldStartVNode 和 newStartVNode 比对\n  } else if (oldEndVNode.key === newEndVNode.key) {\n    // 步骤二：oldEndVNode 和 newEndVNode 比对\n\n    // 调用 patch 函数更新\n    patch(oldEndVNode, newEndVNode, container)\n    // 更新索引，指向下一个位置\n    oldEndVNode = prevChildren[--oldEndIdx]\n    newEndVNode = newEndVNode[--newEndIdx]\n  } else if (oldStartVNode.key === newEndVNode.key) {\n    // 步骤三：oldStartVNode 和 newEndVNode 比对\n\n    // 调用 patch 函数更新\n    patch(oldStartVNode, newEndVNode, container)\n    // 将 oldStartVNode.el 移动到 oldEndVNode.el 的后面，也就是 oldEndVNode.el.nextSibling 的前面\n    container.insertBefore(\n      oldStartVNode.el,\n      oldEndVNode.el.nextSibling\n    )\n    // 更新索引，指向下一个位置\n    oldStartVNode = prevChildren[++oldStartIdx]\n    newEndVNode = nextChildren[--newEndIdx]\n  } else if (oldEndVNode.key === newStartVNode.key) {\n    // 步骤四：oldEndVNode 和 newStartVNode 比对\n\n    // 先调用 patch 函数完成更新\n    patch(oldEndVNode, newStartVNode, container)\n    // 更新完成后，将容器中最后一个子节点移动到最前面，使其成为第一个子节点\n    container.insertBefore(oldEndVNode.el, oldStartVNode.el)\n    // 更新索引，指向下一个位置\n    oldEndVNode = prevChildren[--oldEndIdx]\n    newStartVNode = nextChildren[++newStartIdx]\n  }\n}\n\n"
+                                                                                                                    }
+                                                                                                                }
+                                                                                                            }, {
+                                                                                                                "title": "vue3",
+                                                                                                                "id": "4971dba0-1f36-484d-826f-499c907398fa",
+                                                                                                                "position": {
+                                                                                                                    "x": -2074.1213592233007,
+                                                                                                                    "y": 916.5497264061538
+                                                                                                                },
+                                                                                                                "children": {
+                                                                                                                    "attached": [{
+                                                                                                                        "id": "6389cb0a-59ee-456c-9b88-659a26468005",
+                                                                                                                        "title": "预处理",
+                                                                                                                        "children": {
+                                                                                                                            "attached": [{
+                                                                                                                                "id": "553933a4-07bc-455e-b13a-d48d72c733ae",
+                                                                                                                                "title": "“去掉”相同的前置/后置节点，避免 Diff 算法的执行，从而提高 Diff 效率"
+                                                                                                                            }]
+                                                                                                                        }
+                                                                                                                    }, {
+                                                                                                                        "title": "判断是否需要移动",
+                                                                                                                        "id": "36eaee35-1ad0-4c74-a932-91960b746846",
+                                                                                                                        "children": {
+                                                                                                                            "attached": [{
+                                                                                                                                "id": "7d7cd027-8b9c-429e-94be-df20905edc0b",
+                                                                                                                                "title": "构造一个数组 source，该数组的长度等于新 children 在经过预处理之后剩余未处理节点的数量，并且该数组中每个元素的初始值为 -1",
+                                                                                                                                "children": {
+                                                                                                                                    "attached": [{
+                                                                                                                                        "id": "67139537-cc69-4d9f-b78b-7afc4b855011",
+                                                                                                                                        "title": "存储新 children 中的节点在旧 children 中的位置，后面将会使用它计算出一个最长递增子序列，并用于 DOM 移动"
+                                                                                                                                    }]
+                                                                                                                                }
+                                                                                                                            }]
+                                                                                                                        }
+                                                                                                                    }]
+                                                                                                                }
+                                                                                                            }]
+                                                                                                        }
+                                                                                                    }]
+                                                                                                },
+                                                                                                "class": "importantTopic"
+                                                                                            }],
+                                                                                            "summary": [{
+                                                                                                "title": "其重点无非就是：判断是否有节点需要移动，以及应该如何移动和寻找出那些需要被添加或移除的节点",
+                                                                                                "id": "5c0f7077-5385-47b3-a99b-c47bf86c72b9",
+                                                                                                "style": {
+                                                                                                    "id": "0a3e5a65-b95b-4867-bbde-df0b25974abe",
+                                                                                                    "properties": {
+                                                                                                        "border-line-color": "#2CD551"
+                                                                                                    }
+                                                                                                }
+                                                                                            }]
+                                                                                        },
+                                                                                        "summaries": [{
+                                                                                            "id": "9622f948-e5f2-4c31-9160-69e99d4b5369",
+                                                                                            "range": "(0,0)",
+                                                                                            "topicId": "5c0f7077-5385-47b3-a99b-c47bf86c72b9",
+                                                                                            "style": {
+                                                                                                "id": "1e48c6b6-49f6-43ac-9c0f-03331e45dc76",
+                                                                                                "properties": {
+                                                                                                    "line-color": "#2CD551"
+                                                                                                }
+                                                                                            }
+                                                                                        }]
+                                                                                    }]
+                                                                                },
+                                                                                "class": "minorTopic"
+                                                                            }]
+                                                                        }
+                                                                    }]
+                                                                }
+                                                            }]
+                                                        },
+                                                        "class": "importantTopic"
+                                                    }]
+                                                }
+                                            }]
+                                        },
+                                        "notes": {
+                                            "realHTML": {
+                                                "content": "<pre>function patchElement(prevVNode, nextVNode, container) {\n  // 如果新旧 VNode 描述的是不同的标签，则调用 replaceVNode 函数，使用新的 VNode 替换旧的 VNode\n  if (prevVNode.tag !== nextVNode.tag) {\n    replaceVNode(prevVNode, nextVNode, container)\n    return\n  }\n\n  // 拿到 el 元素，注意这时要让 nextVNode.el 也引用该元素\n  const el = (nextVNode.el = prevVNode.el)\n  const prevData = prevVNode.data\n  const nextData = nextVNode.data\n\n  if (nextData) {\n    // 遍历新的 VNodeData，将旧值和新值都传递给 patchData 函数\n    for (let key in nextData) {\n      const prevValue = prevData[key]\n      const nextValue = nextData[key]\n      patchData(el, key, prevValue, nextValue)\n    }\n  }\n  if (prevData) {\n    // 遍历旧的 VNodeData，将已经不存在于新的 VNodeData 中的数据移除\n    for (let key in prevData) {\n      const prevValue = prevData[key]\n      if (prevValue &amp;&amp; !nextData.hasOwnProperty(key)) {\n        // 第四个参数为 null，代表移除数据\n        patchData(el, key, prevValue, null)\n      }\n    }\n  }\n\n  // 调用 patchChildren 函数递归地更新子节点\n  patchChildren(\n    prevVNode.childFlags, // 旧的 VNode 子节点的类型\n    nextVNode.childFlags, // 新的 VNode 子节点的类型\n    prevVNode.children,   // 旧的 VNode 子节点\n    nextVNode.children,   // 新的 VNode 子节点\n    el                    // 当前标签元素，即这些子节点的父节点\n  )\n}</pre><div><br></div>"
+                                            },
+                                            "plain": {
+                                                "content": "function patchElement(prevVNode, nextVNode, container) {\n  // 如果新旧 VNode 描述的是不同的标签，则调用 replaceVNode 函数，使用新的 VNode 替换旧的 VNode\n  if (prevVNode.tag !== nextVNode.tag) {\n    replaceVNode(prevVNode, nextVNode, container)\n    return\n  }\n\n  // 拿到 el 元素，注意这时要让 nextVNode.el 也引用该元素\n  const el = (nextVNode.el = prevVNode.el)\n  const prevData = prevVNode.data\n  const nextData = nextVNode.data\n\n  if (nextData) {\n    // 遍历新的 VNodeData，将旧值和新值都传递给 patchData 函数\n    for (let key in nextData) {\n      const prevValue = prevData[key]\n      const nextValue = nextData[key]\n      patchData(el, key, prevValue, nextValue)\n    }\n  }\n  if (prevData) {\n    // 遍历旧的 VNodeData，将已经不存在于新的 VNodeData 中的数据移除\n    for (let key in prevData) {\n      const prevValue = prevData[key]\n      if (prevValue && !nextData.hasOwnProperty(key)) {\n        // 第四个参数为 null，代表移除数据\n        patchData(el, key, prevValue, null)\n      }\n    }\n  }\n\n  // 调用 patchChildren 函数递归地更新子节点\n  patchChildren(\n    prevVNode.childFlags, // 旧的 VNode 子节点的类型\n    nextVNode.childFlags, // 新的 VNode 子节点的类型\n    prevVNode.children,   // 旧的 VNode 子节点\n    nextVNode.children,   // 新的 VNode 子节点\n    el                    // 当前标签元素，即这些子节点的父节点\n  )\n}\n\n"
+                                            }
+                                        }
+                                    }, {
+                                        "id": "56eb7f5d-e072-4100-aaee-5bdc458cdd22",
+                                        "title": "更新文本节点",
+                                        "children": {
+                                            "attached": [{
+                                                "id": "299cefd4-9ac9-4547-8d29-bf3a393909d5",
+                                                "title": "设置nodeValue"
+                                            }]
+                                        }
+                                    }, {
+                                        "id": "78e39e9a-ae19-4883-9778-9621d2fe10ae",
+                                        "title": "更新 Fragment",
+                                        "children": {
+                                            "attached": [{
+                                                "id": "86f1cc66-45f1-4875-83bc-d66c5c1103ec",
+                                                "title": "patchChildren"
+                                            }, {
+                                                "title": "el指向",
+                                                "id": "943e6096-2161-40a7-b12c-0b375d70dde9",
+                                                "children": {
+                                                    "attached": [{
+                                                        "id": "64f7fffa-5afc-4565-975b-915132c3ac20",
+                                                        "title": "与我们在 mountFragment 函数中所实现的逻辑是一致的。"
+                                                    }]
+                                                }
+                                            }]
+                                        }
+                                    }, {
+                                        "id": "6a7e7be6-014b-4207-9e55-cc852dfa578e",
+                                        "title": "更新 Portal",
+                                        "children": {
+                                            "attached": [{
+                                                "id": "b67076d6-fae5-4a7f-9954-4aed39e49f1a",
+                                                "title": "patchChildren",
+                                                "children": {
+                                                    "attached": [{
+                                                        "id": "8d2e34d6-84d1-4d71-8ec7-3bb09504dc53",
+                                                        "title": "prevVNode.tag // 注意容器元素是旧的 container",
+                                                        "children": {
+                                                            "attached": [{
+                                                                "id": "3e028148-21d6-49de-9811-5d34c8f6a701",
+                                                                "title": "更新后的子节点也存在于旧的容器中"
+                                                            }]
+                                                        }
+                                                    }]
+                                                }
+                                            }, {
+                                                "id": "36a104ab-919b-4241-b512-5575cbef3685",
+                                                "title": "如果新旧容器不同，才需要搬运\nnextVNode.tag !== prevVNode.tag",
+                                                "children": {
+                                                    "attached": [{
+                                                        "id": "a988e746-7e96-45cf-b1b3-d25cda9bee1b",
+                                                        "title": "当我们调用 appendChild 方法向 DOM 中添加元素时，如果被添加的元素已存在于页面上，那么就会移动该元素到目标容器元素下。",
+                                                        "children": {
+                                                            "attached": [{
+                                                                "id": "98feb7ba-7a65-49ff-a2ce-786d5d644d39",
+                                                                "title": "经过 patchChildren 函数的处理之后，新的子节点已经存在于旧的容器中了，所以我们只需要在新容器元素上调用 appendChild 方法将这些已经存在于旧容器中的子节点搬运过去即可"
+                                                            }]
+                                                        },
+                                                        "href": "https://developer.mozilla.org/zh-CN/docs/Web/API/Node/appendChild"
+                                                    }]
+                                                }
+                                            }]
+                                        },
+                                        "notes": {
+                                            "realHTML": {
+                                                "content": "<pre>function patchPortal(prevVNode, nextVNode) {\n  patchChildren(\n    prevVNode.childFlags,\n    nextVNode.childFlags,\n    prevVNode.children,\n    nextVNode.children,\n    prevVNode.tag // 注意 container 是旧的 container\n  )\n  // 让 nextVNode.el 指向 prevVNode.el\n  nextVNode.el = prevVNode.el\n\n  // 如果新旧容器不同，才需要搬运\n  if (nextVNode.tag !== prevVNode.tag) {\n    // 获取新的容器元素，即挂载目标\n    const container =\n      typeof nextVNode.tag === 'string'\n        ? document.querySelector(nextVNode.tag)\n        : nextVNode.tag\n\n    switch (nextVNode.childFlags) {\n      case ChildrenFlags.SINGLE_VNODE:\n        // 如果新的 Portal 是单个子节点，就把该节点搬运到新容器中\n        container.appendChild(nextVNode.children.el)\n        break\n      case ChildrenFlags.NO_CHILDREN:\n        // 新的 Portal 没有子节点，不需要搬运\n        break\n      default:\n        // 如果新的 Portal 是多个子节点，遍历逐个将它们搬运到新容器中\n        for (let i = 0; i &lt; nextVNode.children.length; i++) {\n          container.appendChild(nextVNode.children[i].el)\n        }\n        break\n    }\n  }</pre><div>}</div>"
+                                            },
+                                            "plain": {
+                                                "content": "function patchPortal(prevVNode, nextVNode) {\n  patchChildren(\n    prevVNode.childFlags,\n    nextVNode.childFlags,\n    prevVNode.children,\n    nextVNode.children,\n    prevVNode.tag // 注意 container 是旧的 container\n  )\n  // 让 nextVNode.el 指向 prevVNode.el\n  nextVNode.el = prevVNode.el\n\n  // 如果新旧容器不同，才需要搬运\n  if (nextVNode.tag !== prevVNode.tag) {\n    // 获取新的容器元素，即挂载目标\n    const container =\n      typeof nextVNode.tag === 'string'\n        ? document.querySelector(nextVNode.tag)\n        : nextVNode.tag\n\n    switch (nextVNode.childFlags) {\n      case ChildrenFlags.SINGLE_VNODE:\n        // 如果新的 Portal 是单个子节点，就把该节点搬运到新容器中\n        container.appendChild(nextVNode.children.el)\n        break\n      case ChildrenFlags.NO_CHILDREN:\n        // 新的 Portal 没有子节点，不需要搬运\n        break\n      default:\n        // 如果新的 Portal 是多个子节点，遍历逐个将它们搬运到新容器中\n        for (let i = 0; i < nextVNode.children.length; i++) {\n          container.appendChild(nextVNode.children[i].el)\n        }\n        break\n    }\n  }\n}\n"
+                                            }
+                                        }
+                                    }, {
+                                        "id": "833cfab6-a7c9-4b89-ae04-b05a79f6619f",
+                                        "title": "有状态组件的更新",
+                                        "children": {
+                                            "attached": [{
+                                                "id": "7a4d33a6-d336-46b1-a509-eafc43b464c2",
+                                                "title": "主动更新  data",
+                                                "notes": {
+                                                    "realHTML": {
+                                                        "content": "<pre>function mountStatefulComponent(vnode, container, isSVG) {\n  // 创建组件实例\n  const instance = new vnode.tag()\n\n  instance._update = function() {\n    // 如果 instance._mounted 为真，说明组件已挂载，应该执行更新操作\n    if (instance._mounted) {\n      // 1、拿到旧的 VNode\n      const prevVNode = instance.$vnode\n      // 2、重渲染新的 VNode\n      const nextVNode = (instance.$vnode = instance.render())\n      // 3、patch 更新\n      patch(prevVNode, nextVNode, prevVNode.el.parentNode)\n      // 4、更新 vnode.el 和 $el\n      instance.$el = vnode.el = instance.$vnode.el\n    } else {\n      // 1、渲染VNode\n      instance.$vnode = instance.render()\n      // 2、挂载\n      mount(instance.$vnode, container, isSVG)\n      // 3、组件已挂载的标识\n      instance._mounted = true\n      // 4、el 属性值 和 组件实例的 $el 属性都引用组件的根DOM元素\n      instance.$el = vnode.el = instance.$vnode.el\n      // 5、调用 mounted 钩子\n      instance.mounted &amp;&amp; instance.mounted()\n    }\n  }\n\n  instance._update()\n}</pre><div><br></div>"
+                                                    },
+                                                    "plain": {
+                                                        "content": "function mountStatefulComponent(vnode, container, isSVG) {\n  // 创建组件实例\n  const instance = new vnode.tag()\n\n  instance._update = function() {\n    // 如果 instance._mounted 为真，说明组件已挂载，应该执行更新操作\n    if (instance._mounted) {\n      // 1、拿到旧的 VNode\n      const prevVNode = instance.$vnode\n      // 2、重渲染新的 VNode\n      const nextVNode = (instance.$vnode = instance.render())\n      // 3、patch 更新\n      patch(prevVNode, nextVNode, prevVNode.el.parentNode)\n      // 4、更新 vnode.el 和 $el\n      instance.$el = vnode.el = instance.$vnode.el\n    } else {\n      // 1、渲染VNode\n      instance.$vnode = instance.render()\n      // 2、挂载\n      mount(instance.$vnode, container, isSVG)\n      // 3、组件已挂载的标识\n      instance._mounted = true\n      // 4、el 属性值 和 组件实例的 $el 属性都引用组件的根DOM元素\n      instance.$el = vnode.el = instance.$vnode.el\n      // 5、调用 mounted 钩子\n      instance.mounted && instance.mounted()\n    }\n  }\n\n  instance._update()\n}\n\n"
+                                                    }
+                                                },
+                                                "children": {
+                                                    "attached": [{
+                                                        "id": "a9d3fad0-05c6-4237-8560-7ae9ceefea9d",
+                                                        "title": "const prevVNode = instance.$vnode"
+                                                    }, {
+                                                        "id": "9f040756-1c55-4b99-9421-60feb565e015",
+                                                        "title": " const nextVNode = (instance.$vnode = instance.render())"
+                                                    }]
+                                                }
+                                            }, {
+                                                "id": "a72dd847-1861-4ef9-baac-95fd8a143f6f",
+                                                "title": "被动更新 Props"
+                                            }]
+                                        }
+                                    }]
+                                },
+                                "notes": {
+                                    "realHTML": {
+                                        "content": "<pre>function patch(prevVNode, nextVNode, container) {\n  // 分别拿到新旧 VNode 的类型，即 flags\n  const nextFlags = nextVNode.flags\n  const prevFlags = prevVNode.flags\n\n  // 检查新旧 VNode 的类型是否相同，如果类型不同，则直接调用 replaceVNode 函数替换 VNode\n  // 如果新旧 VNode 的类型相同，则根据不同的类型调用不同的比对函数\n  if (prevFlags !== nextFlags) {\n    replaceVNode(prevVNode, nextVNode, container)\n  } else if (nextFlags &amp; VNodeFlags.ELEMENT) {\n    patchElement(prevVNode, nextVNode, container)\n  } else if (nextFlags &amp; VNodeFlags.COMPONENT) {\n    patchComponent(prevVNode, nextVNode, container)\n  } else if (nextFlags &amp; VNodeFlags.TEXT) {\n    patchText(prevVNode, nextVNode)\n  } else if (nextFlags &amp; VNodeFlags.FRAGMENT) {\n    patchFragment(prevVNode, nextVNode, container)\n  } else if (nextFlags &amp; VNodeFlags.PORTAL) {\n    patchPortal(prevVNode, nextVNode)\n  }\n}</pre><div><br></div>"
+                                    },
+                                    "plain": {
+                                        "content": "function patch(prevVNode, nextVNode, container) {\n  // 分别拿到新旧 VNode 的类型，即 flags\n  const nextFlags = nextVNode.flags\n  const prevFlags = prevVNode.flags\n\n  // 检查新旧 VNode 的类型是否相同，如果类型不同，则直接调用 replaceVNode 函数替换 VNode\n  // 如果新旧 VNode 的类型相同，则根据不同的类型调用不同的比对函数\n  if (prevFlags !== nextFlags) {\n    replaceVNode(prevVNode, nextVNode, container)\n  } else if (nextFlags & VNodeFlags.ELEMENT) {\n    patchElement(prevVNode, nextVNode, container)\n  } else if (nextFlags & VNodeFlags.COMPONENT) {\n    patchComponent(prevVNode, nextVNode, container)\n  } else if (nextFlags & VNodeFlags.TEXT) {\n    patchText(prevVNode, nextVNode)\n  } else if (nextFlags & VNodeFlags.FRAGMENT) {\n    patchFragment(prevVNode, nextVNode, container)\n  } else if (nextFlags & VNodeFlags.PORTAL) {\n    patchPortal(prevVNode, nextVNode)\n  }\n}\n\n"
+                                    }
+                                }
+                            }]
+                        }
+                    }, {
+                        "id": "b58888b5ceebbf0e68dada0656",
+                        "title": "DIFF",
+                        "children": {
+                            "attached": [{
+                                "title": "React",
+                                "id": "567d84bd-6199-4d0d-beaa-41fd54eabba8",
+                                "children": {
+                                    "attached": [{
+                                        "title": "传统树状比较，复杂度 O(n^3)",
+                                        "id": "e023fd14-0008-4fec-bbea-13aa99abe056"
+                                    }, {
+                                        "title": "针对前端的改进",
+                                        "id": "151c01c3-95ba-44fb-b607-899d86e66af8",
+                                        "children": {
+                                            "attached": [{
+                                                "title": "分层比较",
+                                                "id": "ec05c51a-55bd-4b56-9b63-f2a5b7d29765",
+                                                "children": {
+                                                    "attached": [{
+                                                        "title": "只比较同层的节点",
+                                                        "id": "0e6e98b2-2633-478b-b713-fdc286838b58"
+                                                    }]
+                                                }
+                                            }, {
+                                                "title": "列表key值缓存",
+                                                "id": "e7cb527e-79e6-465a-b290-9b58d8fd533f"
+                                            }, {
+                                                "title": "组件类型比较",
+                                                "id": "b83cbf40-5de0-4b7a-b0b8-a91095f49093",
+                                                "children": {
+                                                    "attached": [{
+                                                        "title": "组件类型不一样，直接替换",
+                                                        "id": "e7311d84-333e-4c24-b79a-bdd368ad07f2"
+                                                    }, {
+                                                        "id": "d9a63be8-1da8-4824-9445-733f1ccfe719",
+                                                        "title": "使用新的 VNode 完全替换旧的 VNode，"
+                                                    }, {
+                                                        "id": "7374da3c-c091-44a7-a7d2-3199be3d0b4c",
+                                                        "title": "如果新旧 VNode 的类型相同，则根据不同的类型调用不同的比对函数"
+                                                    }]
+                                                }
+                                            }]
+                                        }
+                                    }, {
+                                        "title": "列表修改",
+                                        "id": "78602130-5294-4938-8960-0288e5fc0fdb",
+                                        "children": {
+                                            "attached": [{
+                                                "title": "MOVE_EXISTING 移动",
+                                                "id": "ff99644e-06c1-4707-82a4-99f8de155593",
+                                                "children": {
+                                                    "attached": [{
+                                                        "title": "优化的点主要在于减少移动操作",
+                                                        "id": "be5ddf76-cd40-4468-bad8-422a9e8a8b5d",
+                                                        "children": {
+                                                            "attached": [{
+                                                                "id": "d4f724b4-cb29-422a-9ec3-aab206bdda2d",
+                                                                "title": "如果列表中数量较少，那么直接按照顺序比较就好；"
+                                                            }, {
+                                                                "id": "4e682cca-b6e5-4178-acf1-abf1edc099c6",
+                                                                "title": "如果列表中数量的较多，那么直接将元素保存至字典中，键为用户指定的 key，那么也可以在 O(n) 的时间内进行高效的比较；"
+                                                            }]
+                                                        }
+                                                    }]
+                                                }
+                                            }, {
+                                                "id": "b88cf196-848d-4796-bfac-e00ec409be5e",
+                                                "title": "INSERT_MARKUP 插入"
+                                            }, {
+                                                "id": "1d9ca03c-c48f-4a2a-96fb-f1b159b2eca9",
+                                                "title": "REMOVE_NODE 删除"
+                                            }]
+                                        }
+                                    }]
+                                }
+                            }]
+                        },
+                        "href": "https://hustyichi.github.io/2020/09/16/vdom/"
+                    }]
+                },
+                "notes": {
+                    "realHTML": {
+                        "content": "<pre>function render(vnode, container) {\n  const prevVNode = container.vnode\n  if (prevVNode == null) {\n    if (vnode) {\n      // 没有旧的 VNode，使用 `mount` 函数挂载全新的 VNode\n      mount(vnode, container)\n      // 将新的 VNode 添加到 container.vnode 属性下，这样下一次渲染时旧的 VNode 就存在了\n      container.vnode = vnode\n    }\n  } else {\n    if (vnode) {\n      // 有旧的 VNode，则调用 `patch` 函数打补丁\n      patch(prevVNode, vnode, container)\n      // 更新 container.vnode\n      container.vnode = vnode\n    } else {\n      // 有旧的 VNode 但是没有新的 VNode，这说明应该移除 DOM，在浏览器中可以使用 removeChild 函数。\n      container.removeChild(prevVNode.el)\n      container.vnode = null\n    }\n  }\n}</pre><div><br></div>"
+                    },
+                    "plain": {
+                        "content": "function render(vnode, container) {\n  const prevVNode = container.vnode\n  if (prevVNode == null) {\n    if (vnode) {\n      // 没有旧的 VNode，使用 `mount` 函数挂载全新的 VNode\n      mount(vnode, container)\n      // 将新的 VNode 添加到 container.vnode 属性下，这样下一次渲染时旧的 VNode 就存在了\n      container.vnode = vnode\n    }\n  } else {\n    if (vnode) {\n      // 有旧的 VNode，则调用 `patch` 函数打补丁\n      patch(prevVNode, vnode, container)\n      // 更新 container.vnode\n      container.vnode = vnode\n    } else {\n      // 有旧的 VNode 但是没有新的 VNode，这说明应该移除 DOM，在浏览器中可以使用 removeChild 函数。\n      container.removeChild(prevVNode.el)\n      container.vnode = null\n    }\n  }\n}\n\n"
+                    }
+                },
+                "position": {
+                    "x": -362.5107913669064,
+                    "y": 70.42805755395678
+                }
+            }]
+        },
+        "extensions": [{
+            "content": [{
+                "content": "5",
+                "name": "right-number"
+            }],
+            "provider": "org.xmind.ui.map.unbalanced"
+        }],
+        "href": "http://hcysun.me/vue-design/zh/vnode.html#children-%E5%92%8C-childrenflags"
+    },
+    "theme": {
+        "id": "bce9414a70e8e213e4340a7eaa",
+        "importantTopic": {
+            "type": "topic",
+            "properties": {
+                "fo:font-weight": "bold",
+                "fo:color": "#2B2F33",
+                "svg:fill": "#FEFF00"
+            }
+        },
+        "minorTopic": {
+            "type": "topic",
+            "properties": {
+                "fo:font-weight": "bold",
+                "fo:color": "#2B2F33",
+                "svg:fill": "#00EEFF"
+            }
+        },
+        "expiredTopic": {
+            "type": "topic",
+            "properties": {
+                "fo:font-style": "italic",
+                "fo:text-decoration": " line-through"
+            }
+        },
+        "centralTopic": {
+            "properties": {
+                "shape-class": "org.xmind.topicShape.ellipticrectangle",
+                "svg:fill": "#FFFFFF",
+                "border-line-width": "0",
+                "border-line-color": "#DEE3EC",
+                "fo:font-family": "Nunito",
+                "fo:font-weight": "700",
+                "fo:font-style": "normal",
+                "fo:font-size": "28pt",
+                "fo:color": "#333E4A",
+                "line-color": "#DEE3EC",
+                "line-width": "2",
+                "line-class": "org.xmind.branchConnection.straight"
+            },
+            "styleId": "da0c964e-33db-45b4-a44f-e35e07560bdd",
+            "type": "topic"
+        },
+        "boundary": {
+            "properties": {
+                "svg:fill": "#EEEEEE",
+                "line-color": "#FFFFFF",
+                "fo:color": "#333E4A",
+                "fo:font-size": "14pt",
+                "fo:font-family": "Nunito",
+                "fo:font-weight": "400",
+                "fo:font-style": "normal"
+            },
+            "styleId": "c02f5ea9-f235-4aac-9ac9-8ab4fd4c4af5",
+            "type": "boundary"
+        },
+        "floatingTopic": {
+            "properties": {
+                "svg:fill": "none",
+                "border-line-color": "#DEE3EC",
+                "line-color": "#DEE3EC",
+                "fo:font-family": "Nunito",
+                "fo:font-weight": "normal",
+                "fo:color": "#FFFFFF",
+                "fo:font-size": "18pt"
+            },
+            "styleId": "cd6bc59745daeb013cce19771b",
+            "type": "topic"
+        },
+        "subTopic": {
+            "properties": {
+                "fo:font-weight": "normal",
+                "fo:color": "#FFFFFF",
+                "fo:font-family": "Nunito",
+                "fo:font-size": "14pt",
+                "shape-class": "org.xmind.topicShape.roundedRect",
+                "fo:text-align": "left",
+                "border-line-width": "0"
+            },
+            "styleId": "1716f31c-0503-49b0-a836-2ba06efa7a7b",
+            "type": "topic"
+        },
+        "mainTopic": {
+            "properties": {
+                "fo:font-weight": "600",
+                "fo:font-family": "Nunito",
+                "fo:font-style": "normal",
+                "fo:font-size": "18pt",
+                "fo:text-align": "left",
+                "svg:fill": "#FFE6BE",
+                "border-line-color": "#FFE6BE",
+                "border-line-width": "0",
+                "line-width": "2"
+            },
+            "styleId": "e2959a8a-0529-49c7-a51f-b3a98eb39c37",
+            "type": "topic"
+        },
+        "calloutTopic": {
+            "properties": {
+                "svg:fill": "#FFFFFF",
+                "border-line-width": "1pt",
+                "fo:color": "#333E4A",
+                "fo:font-family": "Nunito",
+                "fo:font-weight": "400",
+                "fo:font-size": "14pt",
+                "fo:font-style": "normal"
+            },
+            "styleId": "523fd706-dd30-45c6-8771-f05e70b302d7",
+            "type": "topic"
+        },
+        "summary": {
+            "properties": {
+                "line-width": "2",
+                "line-color": "#DEE3EC"
+            },
+            "styleId": "aacc9984-57bb-479c-b39c-e5e6f2800a7d",
+            "type": "summary"
+        },
+        "summaryTopic": {
+            "properties": {
+                "svg:fill": "none",
+                "fo:font-family": "Nunito",
+                "fo:font-weight": "600",
+                "fo:font-size": "14pt",
+                "fo:font-style": "normal"
+            },
+            "styleId": "144492b0-9df8-45ae-bc04-b5a6936d2353",
+            "type": "topic"
+        },
+        "relationship": {
+            "properties": {
+                "fo:color": "#FFFFFF",
+                "fo:font-family": "Nunito",
+                "fo:font-weight": "400",
+                "fo:font-style": "normal",
+                "line-color": "#FFFFFF",
+                "line-width": "2",
+                "fo:font-size": "14pt"
+            },
+            "styleId": "461d5a0c-e614-4c3c-b9fc-fdafb9433418",
+            "type": "relationship"
+        },
+        "map": {
+            "properties": {
+                "svg:fill": "#51A4B4"
+            },
+            "styleId": "750abb0d1a6b05ec0583f8eb45",
+            "type": "map"
+        }
+    },
+    "topicPositioning": "fixed"
+}]
