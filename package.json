@@ -8,6 +8,7 @@
   "private": null,
   "dependencies": {
     "@types/node": "^16.3.2",
+    "fs-extra": "^10.0.0",
     "jszip": "^3.6.0",
     "svgdom": "^0.1.8",
     "xmind-viewer": "^1.1.2"
